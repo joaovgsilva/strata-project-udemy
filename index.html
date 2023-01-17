@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>strata-project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
         <a href="index.html" class="main-header-link">
-            <img src="images/avatar.jpg" alt="page logo"> 
+            <img src="images/JOTA - logo.jp" alt="page logo"> 
         </a>
-        <h1>
+        <h1 class="main-header-title">
            Estudos e projetos de<br>
            <strong>João Gomes</strong>,<br>
            um Front-End Developer<br>
-           <a href="https://github.com/joaovgsilva" class="github">
-                <img src="images/JOTA - logo.jpg" alt="github logo">
-           </a>
+           Meu <a href="https://github.com/joaovgsilva" class="main-header-link">GitHub</a>.
         </h1>
     </header>
     <main  class="main-content">
         <section class="main-content-section">
-            <h2>Projeto Portifólio BETA</h2>
+            <h2>Project Portfolio Dev Front-End</h2>
             <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
             <a href="#" title="Veja mais" class="default-button">Veja mais</a>
         </section>
@@ -94,16 +97,26 @@
             <p>
                 This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. This is <sup>superscript</sup> text and is <sub>subscript</sub>text. This is <u>underline</u> and this is <code>code: for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.
             </p>
+            <h1>Título h1</h1>
+            <h2>Título h2</h2>
+            <h3>Título h3</h3>
+            <h4>Título h4</h4>
+            <h5>Título h5</h5>
+            <h6>Título h6</h6>
             <blockquote cite="http://developer.mozilla.org">
-                <p>
-                    A tag "blockquote" serve para citar um texto maior.
-                </p>
+                A tag "blockquote" serve para citar um texto maior.
             </blockquote>
-            <p>
-                According to Mozilla's website,
+            <p>According to Mozilla's website,
                 <q cite="https://www.mozilla.org/en-US/about/history/details">A tag "q" serve para citar um texto menor.</q>
             </p>
-            <p>
+            <h4>PreFormatado</h4>
+            <pre>
+                <code>
+&lt;script&gt;
+    alert('oi');
+&lt;/script&gt;
+                </code>
+            </pre>
             <h4>Icons</h4>
             <ul>
                 <li><i class="fa-brands fa-github"></i></li>
@@ -128,12 +141,12 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>description</th>
+                        <th>Description</th>
                         <th>Price</th>
                     </tr>
                 </thead>
                 <tfoot>
-                    <td colspan="2"></td>td</td>
+                    <td colspan="2"></td>
                     <td>100.00</td>
                 </tfoot>
                 <tbody>

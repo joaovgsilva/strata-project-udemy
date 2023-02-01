@@ -14,14 +14,13 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="index.html" class="main-header-link">
-            <img src="images/JOTA - logo.jp" alt="page logo"> 
+        <a href="index.html" class="main-header-link image-link">
+            <img class="main-header-img" src="images/JOTA - logo.png" alt="page logo"> 
         </a>
         <h1 class="main-header-title">
-           Estudos e projetos de<br>
-           <strong>João Gomes</strong>,<br>
-           um Front-End Developer<br>
-           Meu <a href="https://github.com/joaovgsilva" class="main-header-link">GitHub</a>.
+            Front-End Developer<br> 
+            <strong>João Gomes</strong><br>
+            Access my Studies and Projects on <a href="https://github.com/joaovgsilva" class="main-header-link">GitHub</a>
         </h1>
     </header>
     <main  class="main-content">
@@ -32,34 +31,41 @@
         </section>
         <section class="main-content-section">
             <h3>Recent Work</h3>
-            <article class="recent-works-card">
-                <a href="images/fulls/01.jpg">
-                    <img src="images/fulls/01.jpg" alt="description">
-                </a>
-                <p class="recent-works-card-title">Landing Page - Login</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/02.jpg">
-                    <img src="images/fulls/02.jpg" alt="description">
-                </a>
-                <p class="recent-works-card-title">First Project - Udemy</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/03.jpg">
-                    <img src="images/fulls/03.jpg" alt="description">
-                </a>
-                <p class="recent-works-card-title">Fashion Project - Udemy</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
-            <article class="recent-works-card">
-                <a href="images/fulls/04.jpg">
-                    <img src="images/fulls/04.jpg" alt="description">
-                </a>
-                <p class="recent-works-card-title">Strata Project - Udemy</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-            </article>
+            <div class="row">
+                <div class="half-column">
+                    <article class="recent-works-card">
+                        <a class="image-link" href="images/fulls/01.jpg">
+                            <img src="images/fulls/01.jpg" alt="description">
+                        </a>
+                        <p class="recent-works-card-title">Landing Page - Login</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="image-link" href="images/fulls/02.jpg">
+                            <img src="images/fulls/02.jpg" alt="description">
+                        </a>
+                        <p class="recent-works-card-title">First Project - Udemy</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
+                <div class="half-column">
+                    <article class="recent-works-card">
+                        <a class="image-link" href="images/fulls/03.jpg">
+                        <img src="images/fulls/03.jpg" alt="description">
+                        </a>
+                        <p class="recent-works-card-title">Fashion Project - Udemy</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                    <article class="recent-works-card">
+                        <a class="image-link" href="images/fulls/04.jpg">
+                        <img src="images/fulls/04.jpg" alt="description">
+                        </a>
+                        <p class="recent-works-card-title">Strata Project - Udemy</p>
+                        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                    </article>
+                </div>
+            <a href="#" title="Veja o Portifólio Completo" class="button-default">Veja o Portifólio Completo</a>
+            </div>
         </section>
         <section class="main-content-section">
             <h3>Get in Touch</h3>
@@ -290,8 +296,8 @@
             </form>
             <select>
                 <option value="0">Selecione</option>
-                <option value="1">HTML ...</option>
-                <option value="2">CSS ...</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
             </select>
             <label>
                 <input type="radio" value="baixa" name="prioridade">Baixa Prioridade
@@ -311,21 +317,23 @@
             </label>
 
             <label for="msg">Mensagem:</label>
-            <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+            <textarea placeholder="Digite uma mensagem..." id="msg"></textarea>
 
-            <input type="submit" class="button-default" value="Enviar">
-            <input type="reset" class="button-default-stroke" value="Limpar">
+            <input type="submit" class="button-default button-default-big" value="Enviar">
+            <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
         </section>
         <section class="main-content-section">
             <h3>Images</h3>
             <div class="gallery-image">
                 <img src="images/fulls/01.jpg" alt="">
             </div>
-            <div class="gallery-thumb">
-                <img src="images/thumbs/06.jpg" alt="">
-                <img src="images/thumbs/05.jpg" alt="">
-                <img src="images/thumbs/03.jpg" alt="">
-                <img src="images/thumbs/02.jpg" alt="">
+            <div class="gallery-thumb row">
+                <img class="column-1-3" src="images/thumbs/06.jpg" alt="">
+                <img class="column-1-3" src="images/thumbs/05.jpg" alt="">
+                <img class="column-1-3" src="images/thumbs/06.jpg" alt="">
+                <img class="column-1-3" src="images/thumbs/05.jpg" alt="">
+                <img class="column-1-3" src="images/thumbs/06.jpg" alt="">
+                <img class="column-1-3" src="images/thumbs/05.jpg" alt="">
             </div>
             <h4>Left &amp; Right</h4>
             <p>

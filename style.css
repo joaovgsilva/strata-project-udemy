@@ -249,12 +249,25 @@ textarea{
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.button-default:hover{
+    background-color: #50d1ac;
+    border-color: transparent;
 }
 
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit; /* pseudo class que permite o elemento herdar a configuração "pai" */ 
+}
+
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 
 .button-default-small{
@@ -317,4 +330,31 @@ textarea{
 
 .table-alternate tbody tr:last-child td{
     border-bottom: 1px solid #9c9c9c;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left: 0;
+    padding: 0px 54px 72px 0;
+    box-sizing: border-box;
+    width: 35%;
+    text-align: right;
+    font-size: 15px;
+}
+
+.main-footer a{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0;
+    line-height: 2.5;
+}
+
+.main-footer a:hover{
+    color: #49bf9d;
+}
+
+.icon-link{
+    border-bottom: none;
 }

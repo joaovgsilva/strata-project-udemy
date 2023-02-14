@@ -120,19 +120,17 @@
             <h5>Título h5</h5>
             <h6>Título h6</h6>
             <blockquote cite="http://developer.mozilla.org">
-                A tag "blockquote" serve para citar um texto maior.
+                <p>A tag "blockquote" serve para citar um texto maior.</p>
             </blockquote>
             <p>According to Mozilla's website,
                 <q cite="https://www.mozilla.org/en-US/about/history/details">A tag "q" serve para citar um texto menor.</q>
             </p>
             <h4>PreFormatado</h4>
-            <pre>
-                <code>
+            <pre><code>
 &lt;script&gt;
     alert('oi');
 &lt;/script&gt;
-                </code>
-            </pre>
+            </code></pre>
             <h4>List</h4>
             <div class="row"> <!-- class "FILEIRA" !-->
                 <div class="half-column"> <!-- class "MEIA-COLUNA" !-->
@@ -158,8 +156,8 @@
                     </ul>
                     <h5>Icons</h5>
                     <ul class="ul-icons">
-                        <li><i class="fa-brands fa-github"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><span class="hidden">GitHub</span><i class="fa-brands fa-github"></i></li>
+                        <li><span class="hidden">Linkedin</span><i class="fa-brands fa-linkedin"></i></li>
                     </ul>
                 </div>
             </div>
@@ -287,40 +285,40 @@
             </p>
             <input type="submti" class="button-default" value="Mandar">
             <h4>Forms</h4>
-            <form>>
+            <form action="#" method="post">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name">
 
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email">
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                </select>
+                <label>
+                    <input type="radio" value="baixa" name="prioridade">Baixa Prioridade
+                </label>
+                <label>
+                    <input type="radio" value="media" name="prioridade">Média Prioridade
+                </label>
+                <label>
+                    <input type="radio" value="alta" name="prioridade">Alta Prioridade
+                </label>
+
+                <label>
+                    <input type="checkbox" name="copy" value="1">Envie-me uma cópia
+                </label>
+                <label>
+                    <input type="checkbox" name="human" value="1">Sou Humano
+                </label>
+
+                <label for="msg">Mensagem:</label>
+                <textarea placeholder="Digite uma mensagem..." id="msg"></textarea>
+
+                <input type="submit" class="button-default button-default-big" value="Enviar">
+                <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
             </form>
-            <select>
-                <option value="0">Selecione</option>
-                <option value="1">HTML</option>
-                <option value="2">CSS</option>
-            </select>
-            <label>
-                <input type="radio" value="baixa" name="prioridade">Baixa Prioridade
-            </label>
-            <label>
-                <input type="radio" value="media" name="prioridade">Média Prioridade
-            </label>
-            <label>
-                <input type="radio" value="alta" name="prioridade">Alta Prioridade
-            </label>
-
-            <label>
-                <input type="checkbox" name="copy" value="1">Envie-me uma cópia
-            </label>
-            <label>
-                <input type="checkbox" name="human" value="1">Sou Humano
-            </label>
-
-            <label for="msg">Mensagem:</label>
-            <textarea placeholder="Digite uma mensagem..." id="msg"></textarea>
-
-            <input type="submit" class="button-default button-default-big" value="Enviar">
-            <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
         </section>
         <section class="main-content-section">
             <h3>Images</h3>
@@ -335,13 +333,6 @@
                 <img class="column-1-3" src="images/thumbs/06.jpg" alt="">
                 <img class="column-1-3" src="images/thumbs/05.jpg" alt="">
             </div>
-            <h4>Left &amp; Right</h4>
-            <p>
-                <img src="images/avatar.jpg" alt="" class="img-left"> orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
-            </p>
-            <p>
-                <img src="images/avatar.jpg" alt="" class="img-right"> orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
-            </p>
         </section>
     </main>
     <footer class="main-footer">

@@ -61,6 +61,15 @@ blockquote{
     margin: 2em 0;
     padding: .5em 0 .5em 1.5em;
 }
+
+blockquote p{
+    margin-bottom: .5em;
+}
+
+blockquote p:last-child{
+    margin-bottom: 0;
+}
+
 pre code{
     display: block;
 }
@@ -109,6 +118,14 @@ input[type="radio"], input[type="checkbox"]{ /* a função "[]" permite selecion
 
 textarea{
     height: 10em;
+}
+
+.hidden{
+    width: 0;
+    height: 0; 
+    overflow: hidden;
+    /* técnica para esconder o contéudo (visualmente), porém o BROWSER continua fazendo a leitura do texto */
+    display: block;
 }
 
 .main-header{
